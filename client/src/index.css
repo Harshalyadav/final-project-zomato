@@ -1,0 +1,12 @@
+/* ./src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*   Map */
+
+.leaflet-container{
+    width :inherit;
+    height:inherit;
+}
