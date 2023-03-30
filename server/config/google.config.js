@@ -4,16 +4,18 @@ import dotenv from "dotenv";
 dotenv.config({
   path: require("path").resolve(__dirname, "../.env"),
 });
+
+// require("dotenv").config();
 import { UserModel } from "../database/allModels";
 
 const GoogleStrategy = googleOAuth.Strategy;
 
 export default (passport) => {
+  console.log("Process::",process.env.GOOGLE_CLIENT_SECRET);
   passport.use(
     new GoogleStrategy(
       {
-        clientID:
-        process.env.GOOGLE_CLIENT_ID,
+        clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret:  process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: "http://localhost:4000/auth/google/callback",
       },
