@@ -4,6 +4,7 @@ import ReactStars from "react-rating-stars-component";
 import { AiOutlinePlus } from "react-icons/ai";
 import { getImage } from "../../../Redux/Reducer/Image/Image.action";
 import { getFood } from "../../../Redux/Reducer/Food/Food.action";
+// import { addCart } from "../../../Redux/Reducer/Cart/Cart.action";
 import { addCart } from "../../../Redux/Reducer/Cart/Cart.action";
 
 

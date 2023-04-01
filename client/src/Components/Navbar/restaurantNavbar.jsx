@@ -12,8 +12,8 @@ import gravatar from "gravatar";
 import { useSelector } from "react-redux";
 
 // components
-import SignIn from "../Auth/SignIn";
-import SignUp from "../Auth/SignUp";
+import SignIn from "../Auth/SingIn";
+import SignUp from "../Auth/SingUp";
 const MobileNav = ({ SignIn, SignUp }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const reduxState = useSelector((global) => global.user.user);

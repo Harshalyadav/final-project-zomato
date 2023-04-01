@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Razorpay from "razorpay";
 
 // components
-import FoodItem from "../Components/Cart/FoodItem";
+import CartContainer from "../Components/Cart/CartContainer";
 import AddressList from "../Components/Checkout/AddressList";
 
 // reduxa action
@@ -72,7 +72,7 @@ const Checkout = () => {
           </div>
           <div className="my-4 h-32 overflow-y-scroll px-4 flex flex-col gap-2 w-full md:w-3/5 ">
             {reduxStateCart.map((food) => (
-              <FoodItem key={food._id} {...food} />
+              <CartContainer key={food._id} {...food} />
             ))}
           </div>
           <div className="flex flex-col gap-3 w-full md:w-3/5 ">

@@ -9,7 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 
 // components
-import FoodItem from "./FoodItem";
+import FoodItem from "../../Components/restaurant/Order-Online/FoodItem";
 
 // redux action
 import { getCart } from "../../Redux/Reducer/Cart/Cart.action";

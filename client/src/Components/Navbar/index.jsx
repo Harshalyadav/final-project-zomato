@@ -7,8 +7,9 @@ import { useSelector, useDispatch } from "react-redux";
 import gravatar from "gravatar";
 
 // components
-import SignIn from "../Auth/SignIn";
-import SignUp from "../Auth/SignUp";
+// import SignIn from "../Auth/SignIn";
+import SignIn from "../Auth/SingIn";
+import SignUp from "../Auth/SingUp";
 
 // redux actions
 import { signOut } from "../../Redux/Reducer/Auth/Auth.action";
